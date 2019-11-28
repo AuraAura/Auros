@@ -1,0 +1,25 @@
+.grid-container {
+       grid-template-columns: auto auto auto auto auto;
+    background-color: white;
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    }
+.juoda {
+    background: rgba(0, 0, 0, 0.69);
+    text-align: center;
+}
+.raudona {
+    background: orangered;
+    text-align: center;
+}
+.melyna {
+    background: royalblue;
+    text-align: center;
+}
+.zalia {
+    background: green;
+    text-align: center;
+}
+

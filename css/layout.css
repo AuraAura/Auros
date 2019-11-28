@@ -1,14 +1,42 @@
 header{
     background-color: red;
+    grid-area: header;
 }
 aside{
     background-color: blue;
-    width: 250px;
-    height: 250px;
+    /*width: 250px;*/
+    /*height: 250px;*/
+    grid-area: aside;
 }
 main{
     background-color: darkcyan;
+    grid-area:main;
 }
 footer{
     background-color: coral;
+    grid-area: footer;
 }
+
+#grid{
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'aside main'
+        'footer footer';
+    grid-template-columns: 200px 1300px;
+}
+
+@media sreen and (max-width:992px){
+    #grid{
+        grid-template-areas:
+                'header header'
+                'aside main'
+                'footer footer';
+    }
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
