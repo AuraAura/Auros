@@ -6,25 +6,35 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/meniu.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
 </head>
 
 <body>
+
 <div id="grid">
 
 <header>
 <ul>
-    <li><a href="https://finance.yahoo.com/">Apie/Yahoo-Finance</a></li>
-    <li><a href="https://www.nasdaq.com/">Portfolio/Nasdaq</a></li>
-    <li><a href="https://www.nyse.com/index">Kontaktai/NYSE</a></li>
+    <li><a href="https://finance.yahoo.com/">Yahoo-Finance</a></li>
+    <li><a href="https://www.nasdaq.com/">Nasdaq</a></li>
+    <li><a href="https://www.nyse.com/index">NYSE</a></li>
 </ul>
 </header>
 <aside>
-Turinys...
+    <button onclick="document.getElementById('Images').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROIVn-Y62FkrJEUvDtU0kHCwQzVkzqq6Lt1Q5ENWElMUlOLER&s'">Ijungti</button>
+    <img id="Images" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0zSAVErwvSQrUb6Tzb8ZFEtRPa2BfOd15o0TckCTgyF3ZcPO&s' alt="pav aprasymas" style="width:150px">
+    <button onclick="document.getElementById('Images').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY0zSAVErwvSQrUb6Tzb8ZFEtRPa2BfOd15o0TckCTgyF3ZcPO&s'">Isjungti</button>
+
+    <br><br>
+    Turinys... <br>
+    Apie...
 </aside>
+
 <main>
     <br>
     <h1>Auros puslapis :)</h1> <br>
-    RSI indeksas <br>
+        RSI indeksas <br>
     tekstas 1 <br>
     tekstas 2 <br>
     tekstas 3
@@ -33,13 +43,40 @@ Turinys...
     <img src="Images/RSI-Day-Trading-Winning-Example.png" alt="img">
     <img src="Images/RSI2_Diverg602x345.png" alt="img">
     <img src="Images/97b6cc2cad2b435fc2ffe67bccdffca6.png" alt="img">
+
+    <div class="item">
+    <div class="tabai">
+        <div class="tab">Tab1</div>
+        <div class="tab">Tab2</div>
+        <div class="tab">Tab3</div>
+    </div>
+</div>
+    <div class="sheetai">
+        <div class="sheet" id="sheet1">1</div>
+        <div class="sheet" id="sheet2">2</div>
+        <div class="sheet" id="sheet3">3</div>
+    </div>
 </main>
+
 <footer>
+
+     <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+
     <br>
 Visos teises saugomos   <img src="Images/circleA.png" alt="pav aprasymas"/> ;) <br>
     <br>
+
 </footer>
 </div>
+
+<script src="JavaScript/tabs.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="JavaScript/loader.js"></script>
+<script src="JavaScript/mygtukas.js"></script>
+<script src="JavaScript/uzd_Studentas.js"></script>
 
 </body>
 </html>

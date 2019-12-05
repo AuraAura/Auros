@@ -1,19 +1,19 @@
 header{
-    background-color: red;
+    background-color: #ffcba3;
     grid-area: header;
 }
 aside{
-    background-color: blue;
+    background-color: rgba(132, 207, 255, 0.45);
     /*width: 250px;*/
     /*height: 250px;*/
     grid-area: aside;
 }
 main{
-    background-color: darkcyan;
+    background-color: rgba(0, 213, 213, 0.19);
     grid-area:main;
 }
 footer{
-    background-color: coral;
+    background-color: rgba(255, 127, 80, 0.76);
     grid-area: footer;
 }
 

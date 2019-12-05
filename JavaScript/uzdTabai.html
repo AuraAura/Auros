@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Arial;}
+
+        /* Tabo stilius */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Buttono tabo viduje stilius */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Pakeisti fono spalva uzlipus */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Tabo sheeto turinio stilius */
+        .tabosheetas {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabai</h2>
+<p>Paspauskite taba, kad patektumete i norima puslapi:</p>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Puslapis1')">Puslapis1</button>
+    <button class="tablinks" onclick="openCity(event, 'Puslapis2')">Puslapis2</button>
+    <button class="tablinks" onclick="openCity(event, 'Puslapis3')">Puslapis3</button>
+    <button class="tablinks" onclick="openCity(event, 'Puslapis4')">Puslapis4</button>
+    <button class="tablinks" onclick="openCity(event, 'Puslapis5')">Puslapis5</button>
+</div>
+
+<div id="Puslapis1" class="tabosheetas">
+    <h3>Puslapis1</h3>
+    <p>Puslapio1 turinys</p>
+</div>
+
+<div id="Puslapis2" class="tabosheetas">
+    <h3>Puslapis2</h3>
+    <p>Puslapio2 turinys</p>
+</div>
+
+<div id="Puslapis3" class="tabosheetas">
+    <h3>Puslapis3</h3>
+    <p>Puslapio3 turinys</p>
+</div>
+
+<div id="Puslapis4" class="tabosheetas">
+    <h3>Puslapis4</h3>
+    <p>Puslapio4 turinys</p>
+</div>
+
+<div id="Puslapis5" class="tabosheetas">
+    <h3>Puslapis5</h3>
+    <p>Puslapio5 turinys</p>
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabosheetas, tablinks;
+        tabosheetas = document.getElementsByClassName("tabosheetas");
+        for (i = 0; i < tabosheetas.length; i++) {
+            tabosheetas[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>

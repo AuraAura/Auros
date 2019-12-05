@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#nab-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover {
+    color: darkorange!important;
+}
+
+.navbar{
+    background: rgba(249, 245, 224, 0.16);
+}
+
+.navbar-toggler{
+    border: none!important;
+}
+
+.nav-link{
+    color: darkcyan;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#slider{
+    width:100%;
+}
+
+#Apie_RSI{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    color: black;
+    background-color: #b4b4b4;
+}
+
+#Apie_RSI .btn{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-content{
+    padding-top: 20px;
+}
+
+#Kontaktai_pasiteiravimui{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    color: black;
+    background-color: rgba(150, 245, 241, 0.58);}
+
+footer{
+    background-color: rgba(73, 73, 73, 0.36);
+    grid-area: footer;
+    padding-left: 30px;
+    padding-top: 10px;
+}
